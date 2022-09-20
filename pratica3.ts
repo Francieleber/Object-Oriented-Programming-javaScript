@@ -1,22 +1,23 @@
-class produtoEletronico{
+class paciente{
+    nome: string
+    idade: number
+    doenca:string
 
-    nome:string
-    modelo:string
-    preco:number
 
 
-    constructor(nome:string , modelo:string  , preco:number){
-        this.nome= nome
-        this.modelo=modelo
-        this.preco=preco
+    
+    
 
-        
-    }
-
-    MostrarInformacoes(){
-        console.log(`o produto ${this.nome} da marca ${this.modelo} custa o valor de R$ ${this.preco.toFixed(2)} reais`)
+    informacao(){
+       console.log(`meu  paciente ${paciente2.nome},com ${paciente2.idade} anos esta com  ${paciente2.doenca} ` ) 
     }
 }
-let produto = new produtoEletronico("microondas ","electrolux",450)
+var paciente2 = new paciente ()
+paciente2.nome="Franciele" ;
+paciente2.idade=18;
+paciente2.doenca= "diabets";
 
-produto.MostrarInformacoes()
+
+
+
+paciente2.informacao();

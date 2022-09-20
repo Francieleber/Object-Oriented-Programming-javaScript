@@ -1,22 +1,23 @@
-class aviao{
+class contaBancaria{
+    nome: string
+    saldo: number
+    ativo:string
+    conta:string
 
-nome:string
-modelo:string
-capacidade: number
 
+    
+    
 
-constructor(nome :string , modelo: string ,capacidade: number){
-this.nome= nome
-this.modelo = modelo
-this.capacidade = capacidade
-
+    informacao(){
+       console.log(`meu  cliente ${cliente2.nome},com ${cliente2.saldo} de  ${cliente2.ativo} na  ${cliente2.conta} ativa` ) 
+    }
 }
-mostrarInformacoesDoAviao(){
-console.log("meu aviao "+this.nome+" modelo do aviao "+this.modelo+"capacidadede tranporta "+this.capacidade+ "pessoas")
-}
+var cliente2 = new contaBancaria ()
+cliente2.nome="Franciele" ;
+cliente2.saldo=1800;
+cliente2.ativo = "saldo";
+cliente2.conta= "poupança";
 
 
-}
-let fun : aviao = new aviao ("boing" ,"latam ",843)
 
-fun.mostrarInformacoesDoAviao();
+cliente2.informacao();

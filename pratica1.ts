@@ -1,22 +1,20 @@
-class cliente {
-nome:string
-idade:number
-genero:string
-preco:number
- 
-constructor(nome:string , idade:number , genero:string , preco:number){
-    this.nome=nome
-    this.idade=idade
-    this.genero=genero
-    this.preco = preco
+class patinete{
+    marca: string
+    modelo: string
+    preco: number
+    
+    transporta: string
 
-
-
-} 
-informacoesCliente(){
-    console.log(`meu cliente ${this.nome} do genero ${this.genero} com idade de ${this.idade} quer comprar um microondas no valor de ${this.preco.toFixed(2)} reais`)
+    informacao(){
+       console.log(`meu patinete ${patinete1.marca},modelo ${patinete1.modelo}, com valor de ${patinete1.preco}reais ${patinete1.transporta}`) 
+    }
 }
-} 
-let c = new cliente ("ricardo ",25, "masculino ",54)
+var patinete1 = new patinete ()
+patinete1.marca="trull" ;
+patinete1.modelo="infantil";
+patinete1.preco =150.00;
+patinete1.transporta= "pessoas";
 
-c.informacoesCliente()
+
+
+patinete1.informacao();
